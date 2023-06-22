@@ -7,7 +7,28 @@
     <link  type="text/css" rel="stylesheet" href="style.css">
 </head>
 <body>
-    <canvas  width="800" height="800" id="canvas"></canvas>
+    <section id="pc">
+        <section id="canvas-section">
+            <canvas  width="724" height="532" id="canvas"></canvas>
+        </section>
+    </section>
+    
+    <section id="controls">
+        <section id="buttons">
+            <input type="color" id="color-picker">
+            <input type="range" id="brush-size" min="1" max="100" value="5">
+            <button id="download">Download</button>
+            <button id="clear">Clear</button>
+            <button id="mode">Erase</button>
+    
+        </section>
+        <article id="keyboard">
+            <img src="img/keyboard.png" alt="">
+        </article>
+        <article id="mouse">
+            <img src="img/mouse.png" alt="">
+        </article>
+    </section>
     <script type="module" src="index.js"></script>
     
 </body>

@@ -1,3 +1,65 @@
+
+body {               
+    overscroll-behavior: contain;
+    align-items: center;
+  }
 canvas {
     border: 1px solid #000;
+    position: relative;
+    top: 100px;
+    border-radius: 5px;
+    background-image: url("img/transparent.png");
+    background-size: cover;
 } 
+canvas:hover {
+    cursor: url("img/pen.png"), auto;
+}
+canvas.eraser:hover {
+    cursor: url("img/eraser.png"), auto;
+}
+
+#canvas-section {
+
+    background-image: url("img/pc.png");
+    background-size: cover;
+    text-align: center;
+    width:910px;
+    height:910px;
+    margin:auto;
+    z-index: 1;
+}
+
+#case img {
+    z-index: 0;
+}
+#controls {
+    width: 1200px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 20px 0;
+    position: relative;
+    margin: auto;
+}
+
+#buttons{
+    position: absolute;
+    top: 20px;
+    left: 100px;
+}
+#keyboard {
+    width: 70%;
+}
+#keyboard img {
+    width: 100%;
+}
+#mouse {
+    width: 30%;
+}
+#mouse img {
+    width: 100%;
+}
+
+button {
+    font-size: 24px;
+}
